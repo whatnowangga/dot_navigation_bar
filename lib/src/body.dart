@@ -73,14 +73,19 @@ class Body extends StatelessWidget {
                               : EdgeInsets.zero),
                       child: Row(
                         children: [
-                          IconTheme(
-                            data: IconThemeData(
-                              color: Color.lerp(
-                                  _unselectedColor, _selectedColor, t),
-                              size: 24,
-                            ),
-                            child: item.icon,
-                          ),
+                          // IconTheme(
+                          //   data: IconThemeData(
+                          //     color: Color.lerp(
+                          //         _unselectedColor, _selectedColor, t),
+                          //     size: 24,
+                          //   ),
+                          //   child: item.icon,
+                          // ),
+                          SizedBox(
+                            width: 24,
+                            height: 24,
+                            child: item.icon
+                          )
                         ],
                       ),
                     ),
